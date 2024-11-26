@@ -1,0 +1,9 @@
+.op::-webkit-scrollbar {
+  display: none;
+}
+
+/* For other browsers, ensure scrolling still works */
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

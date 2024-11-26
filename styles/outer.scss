@@ -1,0 +1,68 @@
+@import "./theme.scss";
+
+.ai-outer {
+  // border: 1px solid red;
+  
+  .ai-outer-container {
+    height: 70vh;
+   
+    margin: auto;
+    border-radius: 20px;
+  //  border: 1px solid;
+    position: relative;
+    // overflow: hidden;
+
+    .ai-outer-text {
+      position: absolute;
+      // top:0;
+      z-index: 1;
+     
+      // background-color: red;
+      width: 100%;
+      
+      .test{
+        
+        width: 75%;
+      }
+      .ai-outer-my-name {
+        margin: 0px 0px 30px 4px;
+        // color: var(--themeColor4);
+        font-size: clamp(14px, 5vw, 16px);
+        font-weight: 600;
+        line-height: 1;
+      }
+
+      .ai-outer-heading {
+        font-size: clamp(30px, 8vw, 50px);
+        font-weight: 700;
+        color: $themeColor3;
+        line-height: 1;
+      }
+
+      .ai-outer-heading2 {
+        font-size: clamp(20px, 4vw, 40px);
+        font-weight: 600;
+        line-height: 1.5;
+        color: $themeColor4;
+      }
+
+      .ai-outer-description {
+        margin: 20px 0px 0px;
+        max-width: 540px;
+        color: $themeColor3;
+      }
+
+      .ai-outer-contact {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .ai-outer-gooery {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+  }
+}

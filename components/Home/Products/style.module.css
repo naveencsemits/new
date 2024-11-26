@@ -1,0 +1,17 @@
+.op::-webkit-scrollbar {
+  display: none;
+}
+
+/* For other browsers, ensure scrolling still works */
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.blur-background {
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Applies the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+}
