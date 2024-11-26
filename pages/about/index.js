@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 import Mission from "../../components/About/Mission";
 import Team from "../../components/About/Team";
 import ProductMedia from "../../components/ProductMedia";
-import data from "./seed";
+import data from "../../utils/aboutseed";
 import Journey from "../../components/About/Journey";
 import GetInTouch from "../../components/About/GetInTouch";
 export default function About() {

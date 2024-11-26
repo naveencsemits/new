@@ -6,20 +6,20 @@ const BlogDetails = ({ blog }) => {
     <div className=" sm:w-[80vw] mx-auto sm:p-8  rounded-lg flex items-center justify-center flex-col">
       {/* Blog Title */}
       <header className="text-center m-6">
-        <h1 className="text-3xl font-bold ">{blog.title}</h1>
+        <h1 className="text-3xl font-bold ">{blog?.title}</h1>
         <div className="text-sm text-gray-500 mt-2">
-          <p>Updated {blog.updatedDate}</p>
-          <p>Published {blog.publishedDate}</p>
+          <p>Updated {blog?.updatedDate}</p>
+          <p>Published {blog?.publishedDate}</p>
         </div>
-        <p className="mt-4 text-gray-600">{blog.subtitle}</p>
+        <p className="mt-4 text-gray-600">{blog?.subtitle}</p>
       </header>
 
       {/* Featured Image */}
-      {blog.image && (
+      {blog?.image && (
         <div className="mb-6 text-center">
           <img
-            src={blog.image}
-            alt={blog.title}
+            src={blog?.image}
+            alt={blog?.title}
             className="w-full max-h-[500px] rounded-lg object-cover"
           />
         </div>
@@ -27,24 +27,24 @@ const BlogDetails = ({ blog }) => {
 
       {/* Social Sharing */}
       <div className="flex justify-center items-center gap-4 mb-6">
-        <a href={blog.socialLinks.facebook} target="_blank" rel="noopener noreferrer">
+        <a href={blog?.socialLinks.facebook} target="_blank" rel="noopener noreferrer">
           <FaFacebook className="text-blue-600 text-2xl hover:scale-110 transition-transform" />
         </a>
-        <a href={blog.socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+        <a href={blog?.socialLinks.instagram} target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-pink-500 text-2xl hover:scale-110 transition-transform" />
         </a>
-        <a href={blog.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+        <a href={blog?.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-blue-500 text-2xl hover:scale-110 transition-transform" />
         </a>
       </div>
 
       <div className="flex justify-center m-auto mb-5 mt-5">
-        <h2>{blog.description}</h2>
+        <h2>{blog?.description}</h2>
       </div>
 
       {/* Blog Content */}
       <article className="prose prose-sm sm:prose-lg lg:prose-xl mx-auto">
-        {blog.content.map((section, index) => (
+        {blog?.content.map((section, index) => (
           <div key={index} className="mb-6">
             {/* Render section heading */}
             <h2 className="font-bold text-lg sm:text-xl"> {section.heading}</h2>
